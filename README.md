@@ -38,7 +38,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: 
+             - HTML: https://github.com/William-Alonso/3_prev_cards/blob/main/index.html
+             - CSS: 
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
