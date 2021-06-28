@@ -54,10 +54,13 @@ button {
    border: none;
    border-radius: 25px;
    mix-blend-mode: screen;
+   cursor: pointer;
+   transition: all 0.10s;
 }
 button:hover {
-   color: #fff;
-   background-color: none;
+   color: hsl(0, 0%, 95%);
+   background-color: transparent;
+   transition: all 0.10s;
 }
 
 /* ATTRIBUTION */
