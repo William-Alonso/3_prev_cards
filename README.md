@@ -40,7 +40,8 @@ Users should be able to:
 
 - Solution URL: 
              - HTML: https://github.com/William-Alonso/3_prev_cards/blob/main/index.html
-             - CSS: 
+             - CSS: https://github.com/William-Alonso/3_prev_cards/blob/main/style.css
+   
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
