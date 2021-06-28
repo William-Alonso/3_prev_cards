@@ -55,6 +55,10 @@ button {
    border-radius: 25px;
    mix-blend-mode: screen;
 }
+button:hover {
+   color: #fff;
+   background-color: none;
+}
 
 /* ATTRIBUTION */
 .attribution {
