@@ -1,93 +1,92 @@
-/* GENERAL STYLE - MOBILE FIRST */
 * {
-   padding: 0;
-   margin: 0;
+   margin: 0; 
+   padding: 0; 
    box-sizing: border-box;
+   color: white;
 }
+
 body {
-   font-size: 15px;
-   background-color: hsl(0, 0%, 95%);
-   padding: 20px;
+   width: 100vw;
+   --brightOrange: hsl(31, 77%, 52%);
+   --darkCyan: hsl(184, 100%, 22%);
+   --veryDarkCyan: hsl(179, 100%, 13%);
+   color: white;
 }
+
 h2 {
    font-family: 'Big Shoulders Display', cursive;
-   font-size: 2.5em;
+   font-size: 40px;
    text-transform: uppercase;
-   color: hsl(0, 0%, 95%);
 }
-p {
+
+section p {
    font-family: 'Lexend Deca', sans-serif;
-   color: hsla(0, 0%, 100%, 0.75);
-   line-height: 1.5;
+   font-size: 15px;
+   line-height: 25px;
 }
+
 .content {
-   overflow: hidden;
-   max-width: 600px;
-   margin: 50px auto;
+   background-color: white;
+   margin: 24px auto;
    border-radius: 10px;
+   overflow: hidden;
+   width: 300px;
+}
+
+.content section {
+   padding: 48px;
+   min-height: 450px;
    display: flex;
    flex-direction: column;
-   height: fit-content;
+   justify-content:space-between ;
 }
-.section {
-   padding: 50px;
-   height: 450px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-}
+
 .sedans {
-   background-color: hsl(31, 77%, 52%);
+   background-color: var(--brightOrange);
 }
 .suvs {
-   background-color: hsl(184, 100%, 22%);
+   background-color: var(--darkCyan);
 }
-.luxury {
-   background-color: hsl(179, 100%, 13%);
+.luxury{
+   background-color: var(--veryDarkCyan);
 }
+
 button {
-   font-family: 'Lexend Deca', sans-serif;
-   text-align: center;
-   font-size: 15px;
-   width: 150px;
-   height: 50px;
    border: none;
-   border-radius: 25px;
-   mix-blend-mode: screen;
-   cursor: pointer;
-   transition: all 0.10s;
+   border-radius: 24px;
+   background-color: white;
+   width: 146px;
+   height: 48px;
+   font-weight: bolder;
 }
-button:hover {
-   color: hsl(0, 0%, 95%);
-   background-color: transparent;
-   transition: all 0.10s;
+.sedans button {
+   color: var(--brightOrange);
+}
+.suvs button {
+   color: var(--darkCyan);
+}
+.luxury button {
+   color: var(--veryDarkCyan);
 }
 
-/* ATTRIBUTION */
 .attribution {
-   font-size: 11px; 
-   text-align: center;
-   margin-bottom: 10px;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   font-size: 10px;
 }
-.attribution a { 
-   color: hsl(228, 45%, 44%);
+.attribution p {
+   color: #999
+}
+.attribution a {
+   color: #555;
+   text-decoration: none;
 }
 
-/* STYLE VARIATION FOR TABLETS AND DESKTOPS */
-@media (min-width: 780px) {
-   body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-   }
+@media (min-width: 800px) and (orientation: landscape){
    .content {
-      margin: auto;
-      flex-direction: row;
-      max-width: 1000px;
-   }
-   .attribution {
-      position: absolute;
-      bottom: 0;
-      left: 0; right: 0;
+      max-width: none;
+      width: 85%;
+      display: flex;
    }
 }
